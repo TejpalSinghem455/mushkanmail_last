@@ -1,0 +1,134 @@
+.tabs-left, .tabs-right {
+  border-bottom: none;
+  padding-top: 2px;
+}
+.tabs-left {
+  border-right: 1px solid #ddd;
+}
+.tabs-right {
+  border-left: 1px solid #ddd;
+}
+.tabs-left>li, .tabs-right>li {
+  float: none;
+  margin-bottom: 2px;
+}
+.tabs-left>li {
+  margin-right: -1px;
+}
+.tabs-right>li {
+  margin-left: -1px;
+}
+.tabs-left>li.active>a,
+.tabs-left>li.active>a:hover,
+.tabs-left>li.active>a:focus {
+  border-bottom-color: #ddd;
+  border-right-color: transparent;
+}
+
+.tabs-right>li.active>a,
+.tabs-right>li.active>a:hover,
+.tabs-right>li.active>a:focus {
+  border-bottom: 1px solid #ddd;
+  border-left-color: transparent;
+}
+.tabs-left>li>a {
+  border-radius: 4px 0 0 4px;
+  margin-right: 0;
+  display:block;
+}
+.tabs-right>li>a {
+  border-radius: 0 4px 4px 0;
+  margin-right: 0;
+}
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical>.btn-group:before, .btn-group-vertical>.btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-footer:before, .modal-footer:after {
+    display: table;
+    content: " ";
+}
+
+
+.nav {
+    display: block!important;
+    /* display: flex; */
+    -ms-flex-wrap: no-wrap;
+    flex-wrap: no-wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-tabs>.active{
+	
+	    background-color: #f1f1f1;
+}
+
+
+.nav-tabs>li {
+    padding: 0px 0px 3px 0px;
+    border-bottom: 1px solid #f1f1f1;
+    margin: 4px 0px;
+}
+.nav-tabs>li:last-child{
+	
+	border-bottom: 0px!important;
+	margin:0px 0px -3px 0px!important;
+}
+
+.nav-tabs>li>a{
+	
+	color:#000;
+}
+
+.nav-tabs>li>a:hover{
+	text-decoration:none;
+	
+	color:#000;
+}
+
+.tabs>.active {
+    background-color: #f1f1f1;
+}
+
+
+.tabs>li {
+    padding: 0px 0px 5px 0px;
+    border-bottom: 1px solid #f1f1f1;
+    margin: 4px 0px;
+	    clear: both;
+}
+
+
+@media only screen and (max-width: 768px) {
+ .nav-tabs>li {
+    padding: 0px 0px 3px 0px;
+    border-bottom: 1px solid #fff!important;
+    margin: 4px 0px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

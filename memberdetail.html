@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  <title>Welcome to Muskanmail</title>
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+
+  <!-- Vendor -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Vendor -->
+<link rel="stylesheet"   href="css/stylet.css">
+
+ <link rel="stylesheet" type="text/css" href="css/demo-page-styles.css">
+
+	<link rel="stylesheet" type="text/css" href="css/breaking-news-ticker.css">
+	
+	
+  <!--Main Menu File-->
+  <link id="effect" rel="stylesheet" type="text/css" media="all" href="webslidemenu/dropdown-effects/fade-down.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="webslidemenu/webslidemenu.css" />
+
+  <link id="theme" rel="stylesheet" type="text/css" media="all" href="webslidemenu/color-skins/white-red.css" />
+  
+	
+
+  <!-- Include Below JS After Your jQuery.min File -->
+  <script type="text/javascript" src="webslidemenu/webslidemenu.js"></script>
+  <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+  <!--Main Menu File-->
+
+ 
+
+  <!--For Demo Only (Remove below css and Javascript) -->
+  <link rel="stylesheet" href="webslidemenu/demo.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style1.css" />
+ 
+  
+  
+  <script type='text/javascript'>
+    $(document).ready(function() {
+      $("a[data-theme]").click(function() {
+        $("head link#theme").attr("href", $(this).data("theme"));
+        $(this).toggleClass('active').siblings().removeClass('active');
+      });
+      $("a[data-effect]").click(function() {
+        $("head link#effect").attr("href", $(this).data("effect"));
+        $(this).toggleClass('active').siblings().removeClass('active');
+      });
+    });
+  </script>
+  <!--For Demo Only (Remove below css and Javascript) -->
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/jquery.sharer.css">
+<link rel="stylesheet" href="css/demo.css">
+
+</head>
+
+<body>
+<div class="container-fluid fluids">
+     <div class="row row_f">
+    
+	<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"><p class="text_01">TUE, FEB 19, 2019, 06.01PM IST</p></div>
+	<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+	<div class="media text-center">
+	<ul class="social_media">
+           <li><a href="#"><img src="images/smedia/wi-fi-01.png" alt="icon"></a></li>
+	       <li><a href="#"><img src="images/smedia/f-01.png" alt="icon"></a></li>
+		   <li><a href="#"><img src="images/smedia/t-01.png" alt="icon"></a></li>
+		   <li><a href="#"><img src="images/smedia/p-01.png" alt="icon"></a></li>
+		   <li><a href="#"><img src="images/smedia/w-01.png" alt="icon"></a></li>
+		   <li><a href="#"><img src="images/smedia/v-01.png" alt="icon"></a></li>
+		   <li><a href="#"><img src="images/smedia/y-01.png" alt="icon"></a></li>
+		   <li><a href="#"><img src="images/smedia/i-01.png" alt="icon"></a></li>
+		   
+	</ul>
+	
+	
+	</div>
+	
+	
+	</div>
+	<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+	
+	      <ul class="right_section">
+		   <li><a href="#"id="hindi_text" > हिंदी </a></li>
+		  <li><a id="modal_trigger" href="#modal" > LOGIN </a></li>
+          <li id="last_donate"><a href="#" id="dono">DONATE</a></li>
+		  
+		  
+		  </ul>
+	
+			
+			
+			
+			<!----------------------------------------model box start here---------------------------------------------------------->
+			
+			
+            <div id="modal" class="popupContainer" style="display:none;">
+				<header class="popupHeader">
+						<span class="header_title">Login</span>
+						<span class="modal_close"><i class="fa fa-times"></i></span>
+				</header>
+
+				<section class="popupBody">
+						<!-- Social Login -->
+						<div class="social_login">
+								<div class="">
+										<a href="#" class="social_box fb">
+												<span class="icon"><i class="fa fa-facebook"></i></span>
+												<span class="icon_title">Connect with Facebook</span>
+
+										</a>
+
+										<a href="#" class="social_box google">
+												<span class="icon"><i class="fa fa-google-plus"></i></span>
+												<span class="icon_title">Connect with Google</span>
+										</a>
+								</div>
+
+								<div class="centeredText">
+										<span>Or use your Email address</span>
+								</div>
+
+								<div class="action_btns">
+										<div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
+										<div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
+								</div>
+						</div>
+
+						<!-- Username & Password Login form -->
+						<div class="user_login">
+								<form>
+										<label>Email / Username</label>
+										<input type="text" />
+										<br />
+
+										<label>Password</label>
+										<input type="password" />
+										<br />
+
+										<div class="checkbox">
+												<input id="remember" type="checkbox" />
+												<label for="remember">Remember me on this computer</label>
+										</div>
+
+										<div class="action_btns">
+												<div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+												<div class="one_half last"><a href="#" class="btn btn_red">Login</a></div>
+										</div>
+								</form>
+
+								<a href="#" class="forgot_password">Forgot password?</a>
+						</div>
+
+						<!-- Register Form -->
+						<div class="user_register">
+								<form>
+										<label>Full Name</label>
+										<input type="text" />
+										<br />
+
+										<label>Email Address</label>
+										<input type="email" />
+										<br />
+
+										<label>Password</label>
+										<input type="password" />
+										<br />
+
+										<div class="checkbox">
+												<input id="send_updates" type="checkbox" />
+												<label for="send_updates">Send me occasional email updates</label>
+										</div>
+
+										<div class="action_btns">
+												<div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+												<div class="one_half last"><a href="#" class="btn btn_red">Register</a></div>
+										</div>
+								</form>
+						</div>
+				</section>
+		</div>
+	<script type="text/javascript">
+	$("#modal_trigger").leanModal({top : 200, overlay : 0.6, closeButton: ".modal_close" });
+
+	$(function(){
+		// Calling Login Form
+		$("#login_form").click(function(){
+			$(".social_login").hide();
+			$(".user_login").show();
+			return false;
+		});
+
+		// Calling Register Form
+		$("#register_form").click(function(){
+			$(".social_login").hide();
+			$(".user_register").show();
+			$(".header_title").text('Register');
+			return false;
+		});
+
+		// Going back to Social Forms
+		$(".back_btn").click(function(){
+			$(".social_login").show();
+			$(".user_login").hide();
+			$(".user_register").hide();
+			$(".social_login").show();
+			$(".header_title").text('Login');
+			return false;
+		});
+
+	})
+</script>
+
+	<!-----------------------------------------------------------------model box end here-------------------------------------------------------------------->
+	
+	</div>
+	
+	
+	
+	
+	 </div>
+	
+ </div>
+
+<!------------------------------------------------top section end here-------------------------------------------------------------------------->
+
+<!-----------------------------------------------------muskan mail sectrion start here------------------------------------------------------------>
+<div class="container-fluid">
+<div class="row row_second">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+
+<p class="text-center mid_section"><a href="#" ><img src="images/mu-01.png" alt="#" class="img-fluid"></a></p>
+
+</div>
+
+</div>
+</div>
+  <!-- Mobile Header -->
+  <div class="wsmobileheader clearfix ">
+    <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+    <span class="smllogo"><img src="images/menu-logo.png" width="80" alt=""/></span>
+    <!---<a href="tel:123456789" class="callusbtn"><i class="fa fa-phone" aria-hidden="true"></i></a>---->
+  </div>
+  <!-- Mobile Header -->
+
+<style>
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+
+  <div class="wsmainfull clearfix" id="myHeader">
+  
+  <script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+    <div class="wsmainwp clearfix">
+
+
+      <div class="desktoplogo"><a href="#"><img src="images/sml-logo02.png" alt=""></a></div>
+      <!--Main Menu HTML Code-->
+      <nav class="wsmenu clearfix">
+        <ul class="wsmenu-list">
+          <!---<li class="rightmenu">
+            <form class="topmenusearch">
+              <input placeholder="Search...">
+              <button class="btnstyle"><i class="searchicon fa fa-search" aria-hidden="true"></i></button>
+            </form>
+          </li--->
+                                 
+		                        
+		                      
+		            
+		  <li><a href="#" class="active">Home</a></li>
+           <li><a href="#" >Muskan Mail</a></li>
+		   <li><a href="#" >Dream Dwarka</a></li>
+		   <li><a href="#" > Refuse</a></li>
+		   <li><a href="#" >Dharma</a></li>
+		   <li><a href="#" >Health </a></li>
+		   <li><a href="#" >Education</a></li>
+		   <li><a href="#" >Communication </a></li>
+         
+          <li><a href="#">Shop & Services </a>
+          
+          </li>
+          <li><a href="#">Members  </a>
+            <ul class="sub-menu">
+              <li><a href="#"><i class="fa fa-angle-right"></i>Website Design </a></li>
+              <li><a href="#"><i class="fa fa-angle-right"></i>Ecommerce Solutions</a></li>
+              <li><a href="#"><i class="fa fa-angle-right"></i>Application Development</a></li>
+              <li><a href="#"><i class="fa fa-angle-right"></i>Website Development</a></li>
+              <li><a href="#"><i class="fa fa-angle-right"></i>Open Source Development</a>
+                <ul class="sub-menu">
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Submenu item 1</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Submenu item 2</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Submenu item 3</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Submenu item 4</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#"> Organizations</a>
+            
+          </li>
+          <li><a href="#"> Media </a>
+
+          </li>
+		  <li><a href="#"> Others </a>
+
+          </li>
+        </ul>
+      </nav>
+      <!--Menu HTML Code-->
+    </div>
+  </div>
+
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 padding">
+<!---<p class="first_s"><span class="b_news">BREAKING NEWS </span>       
+Muskan Mail: Muskan mail is coming back</p>--->
+<section class="demo-section-box">
+		<div class="section-container">
+			<div class="demo-box">
+				
+				<!-- DEMO1 HTML STARTS HERE *-->
+				<!-- *********************** -->
+				<div class="bn-breaking-news" id="newsTicker1">
+			    	<div class="bn-label"> BREAKING NEWS</div>
+			    	<div class="bn-news">
+			    		<ul>
+			    			<li><a href="#">1.1. There many variations of passages of Lorem Ipsum available</a></li>
+			    			<li><a href="#">1.2. Ipsum is simply dummy text of the printing and typesetting industry</a></li>
+			    			<li><a href="#">1.3. Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></li>
+			    			<li><a href="#">1.4. Lorem simply dummy text of the printing and typesetting industry</a></li>
+			    			<li><a href="#">1.5. Ipsum is simply dummy of the printing and typesetting industry</a></li>
+			    			<li><a href="#">1.6. Lorem Ipsum simply dummy text of the printing and typesetting industry</a></li>
+			    			<li><a href="#">1.7. Ipsum is simply dummy text of the printing typesetting industry</a></li>
+			    		</ul>
+			    	</div>
+			    	<div class="bn-controls">
+			    		<button><span class="bn-arrow bn-prev"></span></button>
+			    		<button><span class="bn-action"></span></button>
+			    		<button><span class="bn-arrow bn-next"></span></button>
+			    	</div>
+			    </div>
+			  
+
+			</div>
+		</div>
+
+		
+
+		
+	</section>
+			
+			
+	
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 right_padding">
+			          
+<form class="topmenusearch form_s">
+              <input placeholder="I am looking for..." class="search">
+              <button class="btnstyle search_btn"><img src="images/search.png" alt="imgs" class="img_searchs"></button>
+            </form>
+          
+			</div>
+</div>
+</div>
+ <!---------------------------------------------------------------------------next section with slider start here------------------------------------------------------>
+
+
+
+    <div class="container">
+            <div class="row row_banners">
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+
+
+
+<div class="container"> 
+    
+    
+        <center>
+       
+      <p class="ddf" href="#signup" data-toggle="modal" data-target=".log-sign">Members Login</p>
+      </center>
+    
+        
+    
+      </div>
+    
+    <!-- Modal -->
+    <div class="modal fade bs-modal-sm log-sign" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content model_ss">
+            
+            <div class="bs-example bs-example-tabs">
+                    
+                    <button type="button" class="close close_btn" data-dismiss="modal">&times;</button>
+
+                <ul id="myTab" class="nav nav-tabs">
+                  <li id="tab1" class=" active tab-style login-shadow "><a href="#signin" data-toggle="tab">Log In</a></li>
+                  <li id="tab2" class=" tab-style "><a href="#signup" data-toggle="tab">Sign Up</a></li>
+                  
+                </ul>
+            </div>
+          <div class="modal-body">
+            <div id="myTabContent" class="tab-content">
+           
+            <div class="tab-pane fade active in" id="signin">
+                <form class="form-horizontal">
+                <fieldset>
+                <!-- Sign In Form -->
+                <!-- Text input-->
+                  
+                   <div class="group">
+    <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+        <label class="label" for="date">Email address</label></div>
+                  
+                  
+                <!-- Password input-->
+                <div class="group">
+    <input required="" class="input" type="password"><span class="highlight"></span><span class="bar"></span>
+        <label class="label" for="date">Password</label>
+        </div>
+    <em>minimum 6 characters</em>
+    
+               <div class="forgot-link">
+                <a href="#forgot" data-toggle="modal" data-target="#forgot-password"> I forgot my password</a>
+                </div>
+                
+    
+                <!-- Button -->
+                <div class="control-group">
+                  <label class="control-label" for="signin"></label>
+                  <div class="controls">
+                    <button id="signin" name="signin" class="btn btn-primary btn-block">Log In</button>
+                  </div>
+                </div>
+                </fieldset>
+                </form>
+            </div>
+              
+              
+            <div class="tab-pane fade" id="signup">
+                <form class="form-horizontal">
+                <fieldset>
+                <!-- Sign Up Form -->
+                <!-- Text input-->
+                <div class="group">
+    <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+        <label class="label" for="date">First Name</label></div>
+                
+                <!-- Text input-->
+                <div class="group">
+    <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+        <label class="label" for="date">Last Name</label></div>
+                
+                <!-- Password input-->
+                <div class="group">
+    <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+        <label class="label" for="date">Email</label></div>
+                
+                <!-- Text input-->
+                <div class="group">
+    <input required="" class="input" type="password"><span class="highlight"></span><span class="bar"></span>
+        <label class="label" for="date">Password</label></div>
+                  <em>1-8 Characters</em>
+                
+    
+                
+                
+                
+                <!-- Button -->
+                <div class="control-group">
+                  <label class="control-label" for="confirmsignup"></label>
+                  <div class="controls">
+                    <button id="confirmsignup" name="confirmsignup" class="btn btn-primary btn-block">Sign Up</button>
+                  </div>
+                </div>
+                </fieldset>
+                </form>
+          </div>
+        </div>
+          </div>
+          <!--<div class="modal-footer">
+          <center>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </center>
+          </div>-->
+        </div>
+      </div>
+    </div>
+      
+       
+    
+    <!--modal2-->
+    
+    <div class="modal fade bs-modal-sm" id="forgot-password" tabindex="0" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Password will be sent to your email</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+            <fieldset>
+            <div class="group">
+    <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+        <label class="label" for="date">Email address</label></div>
+            
+            
+            <div class="control-group">
+                  <label class="control-label" for="forpassword"></label>
+                  <div class="controls">
+                    <button id="forpasswodr" name="forpassword" class="btn btn-primary btn-block">Send</button>
+                  </div>
+                </div>
+              </fieldset>
+                </form>
+              
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+</div>
+
+
+    </div>
+</div>
+<script>
+$(window, document, undefined).ready(function() {
+
+        $('.input').blur(function() {
+          var $this = $(this);
+          if ($this.val())
+            $this.addClass('used');
+          else
+            $this.removeClass('used');
+        });
+        
+        });
+      
+      
+      $('#tab1').on('click' , function(){
+          $('#tab1').addClass('login-shadow');
+         $('#tab2').removeClass('signup-shadow');
+      });
+      
+      $('#tab2').on('click' , function(){
+          $('#tab2').addClass('signup-shadow');
+         $('#tab1').removeClass('login-shadow');
+      
+      
+      });
+      </script>
+<!------------------------------------------------------------------------------next section with slider end here----------------------
+-------------------------------->
+<div class="container container_ss">
+<div class="row">
+<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 gallery_margin ">
+<p class="text_exx"><span class="latest"> Sumitra Mahajan says she will not contest.</span></p>
+<div class=" row row_details">
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 no-padding">
+
+    <div class="text-center"><img src="images/s-01.jpg" class="img-fluid"></div>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12"><p>Lok Sabha Speaker Sumitra Mahajan on Friday announced that she would not contest the coming Lok Sabha election.
+
+        In a statement, Ms. Mahajan said the BJP appeared hesitant in declaring a candidate for the Indore seat, considered one of the safe seats of the BJP in Madhya Pradesh.
+        
+        Ms. Mahajan has represented Indore eight times and is the longest serving woman Member of Parliament.
+        “The BJP has not declared a candidate for the Indore seat till now. Why is there this situation of uncertainty? It’s possible that the party may be hesitant to take a particular decision. I had, however, spoken to seniors in the party in this context quite early on and left the decision to them. It seems they still have some hesitancy with regard to the candidate for the seat.This is the reason why I’m making this declaration now that I will not be fighting the Lok Sabha polls, and leave the party free to make a decision on the seat,” she said.
+        ....<a data-toggle="collapse" data-target="#demo">Read More</a></p>
+        <p id="demo" class="collapse">
+         
+        
+        Ms Mahajan is another on a list of BJP leaders past the age of 75 who have been quietly put to pasture with regard to electoral politics. The list comprises former Deputy Prime Minister L.K. Advani, former Union Ministers Murli Manohar Joshi and Shanta Kumar, senior leader Karia Munda, among others.</p></div>
+
+
+
+
+</div>
+<p class="text_exx"><span class="latest"> Sumitra Mahajan says she will not contest.</span></p>
+<div class=" row row_details">
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 no-padding">
+
+    <div class="text-center"><img src="images/s-01.jpg" class="img-fluid"></div>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12"><p>Lok Sabha Speaker Sumitra Mahajan on Friday announced that she would not contest the coming Lok Sabha election.
+
+        In a statement, Ms. Mahajan said the BJP appeared hesitant in declaring a candidate for the Indore seat, considered one of the safe seats of the BJP in Madhya Pradesh.
+        
+        Ms. Mahajan has represented Indore eight times and is the longest serving woman Member of Parliament.
+        “The BJP has not declared a candidate for the Indore seat till now. Why is there this situation of uncertainty? It’s possible that the party may be hesitant to take a particular decision. I had, however, spoken to seniors in the party in this context quite early on and left the decision to them. It seems they still have some hesitancy with regard to the candidate for the seat.This is the reason why I’m making this declaration now that I will not be fighting the Lok Sabha polls, and leave the party free to make a decision on the seat,” she said.
+        ....<a data-toggle="collapse" data-target="#demo-01">Read More</a></p>
+        <p id="demo-01" class="collapse">
+         
+        
+        Ms Mahajan is another on a list of BJP leaders past the age of 75 who have been quietly put to pasture with regard to electoral politics. The list comprises former Deputy Prime Minister L.K. Advani, former Union Ministers Murli Manohar Joshi and Shanta Kumar, senior leader Karia Munda, among others.</p></div>
+
+
+
+
+</div>
+<p class="text_exx"><span class="latest"> Sumitra Mahajan says she will not contest.</span></p>
+<div class=" row row_details">
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 no-padding">
+
+    <div class="text-center"><img src="images/s-01.jpg" class="img-fluid"></div>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12"><p>Lok Sabha Speaker Sumitra Mahajan on Friday announced that she would not contest the coming Lok Sabha election.
+
+        In a statement, Ms. Mahajan said the BJP appeared hesitant in declaring a candidate for the Indore seat, considered one of the safe seats of the BJP in Madhya Pradesh.
+        
+        Ms. Mahajan has represented Indore eight times and is the longest serving woman Member of Parliament.
+        “The BJP has not declared a candidate for the Indore seat till now. Why is there this situation of uncertainty? It’s possible that the party may be hesitant to take a particular decision. I had, however, spoken to seniors in the party in this context quite early on and left the decision to them. It seems they still have some hesitancy with regard to the candidate for the seat.  This is the reason why I’m making this declaration now that I will not be fighting the Lok Sabha polls, and leave the party free to make a decision on the seat,” she said.
+        ....<a data-toggle="collapse" data-target="#demo-02">Read More</a></p>
+        <p id="demo-02" class="collapse">
+       
+        
+        Ms Mahajan is another on a list of BJP leaders past the age of 75 who have been quietly put to pasture with regard to electoral politics. The list comprises former Deputy Prime Minister L.K. Advani, former Union Ministers Murli Manohar Joshi and Shanta Kumar, senior leader Karia Munda, among others.</p></div>
+
+
+
+
+</div>
+<p class="text_exx"><span class="latest"> Sumitra Mahajan says she will not contest.</span></p>
+<div class=" row row_details">
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 no-padding">
+
+    <div class="text-center"><img src="images/s-01.jpg" class="img-fluid"></div>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12"><p>Lok Sabha Speaker Sumitra Mahajan on Friday announced that she would not contest the coming Lok Sabha election.
+
+        In a statement, Ms. Mahajan said the BJP appeared hesitant in declaring a candidate for the Indore seat, considered one of the safe seats of the BJP in Madhya Pradesh.
+        
+        Ms. Mahajan has represented Indore eight times and is the longest serving woman Member of Parliament.
+        “The BJP has not declared a candidate for the Indore seat till now. Why is there this situation of uncertainty? It’s possible that the party may be hesitant to take a particular decision. I had, however, spoken to seniors in the party in this context quite early on and left the decision to them. It seems they still have some hesitancy with regard to the candidate for the seat.This is the reason why I’m making this declaration now that I will not be fighting the Lok Sabha polls, and leave the party free to make a decision on the seat,” she said.
+        ....<a data-toggle="collapse" data-target="#demo-03">Read More</a></p>
+        <p id="demo-03" class="collapse">
+         
+        
+        Ms Mahajan is another on a list of BJP leaders past the age of 75 who have been quietly put to pasture with regard to electoral politics. The list comprises former Deputy Prime Minister L.K. Advani, former Union Ministers Murli Manohar Joshi and Shanta Kumar, senior leader Karia Munda, among others.</p></div>
+
+
+
+
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
+<p class="text_excontact"><span class="latest"> RECENT'S POST</span></p>
+
+<div class="blogs">
+<div class="ek_top ek_tops">
+  
+<p class="text-center ap_ss"><img src="images/mms-01.jpg" class="img-fluid pro_img"></p>
+<p class="text-center"><b>Sumitra Mahajan</b></p>
+<p class="text-justify pro_text">Ms. Mahajan has represented Indore eight times and is the longest serving woman Member of Parliament.“The BJP has not declared a candidate for the Indore seat till now.</p>
+</div>
+
+
+
+
+
+   
+</div><br>
+
+<div class="news_social">
+<h4 class="mms">Mushkan mail</h4>
+<pre class="pre">Connect Throught Social Media</pre>
+
+</div><br>
+
+<div id="sharer-bottom" class="sharer-container"></div><br><br>
+
+<p class="text-center">
+<a href="#" target="_blank" class="head_slid"><img src="images/go-01.jpg" alt="google" class="img-fluid"></a></p>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+</div>
+
+<!--------------------------------------------------------------------------second section end here---------------------------------------------->
+<div class="technology-section" style="background-color:#141414;">
+<div class="container container_ss">
+<div class="row ">
+
+<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+<div class="left_sections">
+<ul class="footer_left">
+<li>Copyright © 2019  <span class="pari">Parijat Sanchetna Mandal Trust</span></li>
+<li> |</li>
+<li><a href="about.html">About</a></li>
+<li> |</li>
+<li><a href="contact.html">Contact</a></li>
+<li> |</li>
+<li><a href="#">Jobs</a></li>
+<li> |</li>
+<li><a href="#">Advertise with us </a></li>
+<li> |</li>
+<li><a href="#"> Feedback  </a></li>
+<li> |</li>
+<li><a href="#"> Disclaimer </a></li>
+ 
+</ul>
+
+</div>
+
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<p class="text-right rigt_l">Site By: <a href="http://sand-strom.com/" class="apexs"target="_blank">Sandstrom Infotech</a></p></p>
+
+
+</div>
+
+
+
+
+
+</div>
+</div>
+</div>
+
+<script src="js/jquery.sharer.js"></script> 
+<script>$(".sharer-container").sharer()</script> 
+<script src="js/jquery-3.3.1.min.js"></script>
+
+	<!-- Highlight.js plugin code-->
+	<script src="js/highlight.pack.js"></script>
+	
+
+	<script type="text/javascript">
+		
+		hljs.initHighlightingOnLoad();
+
+		$(document).ready(function(){
+
+			$('#newsTicker1').breakingNews();			
+
+		});
+
+	</script>
+
+</body>
+
+
+
+</html>
+</html>
